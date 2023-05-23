@@ -1,4 +1,5 @@
 let audio_paused, track_number, btnPlay, audio, time, btnPrev, btnNext, logo, name, author, playPauseImage
+
 let audioContext, audioAnalyser, audioContextSrc
 const logos = [
     '17-zhelaniy.jpg',
@@ -24,6 +25,7 @@ const playlist = [
     'mushmellow-loser.mp3',
     'NF-DRIFTING.mp3'
 ]
+
 let waves = []
 const NUM_OF_TRACKS = playlist.length
 
@@ -120,6 +122,7 @@ let audioPlay = setInterval(function () {
 
 function setAudioContext() {
     audioContext = new AudioContext()
+
     audioContextSrc = audioContext.createMediaElementSource(audio)
     audioAnalyser = audioContext.createAnalyser()
 
