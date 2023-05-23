@@ -121,6 +121,7 @@ let audioPlay = setInterval(function () {
 }, 10)
 
 function setAudioContext() {
+
     audioContext = new AudioContext()
 
     audioContextSrc = audioContext.createMediaElementSource(audio)
